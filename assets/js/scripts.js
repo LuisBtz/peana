@@ -3,7 +3,6 @@ $(document).ready(function () {
         $('nav').toggleClass('clicked');
     });
 
-    
     $('.owl-carousel').owlCarousel({
     loop:true,
     nav:false,

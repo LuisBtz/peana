@@ -1,7 +1,10 @@
 #home
+    @media (max-width: 800px)
+        margin-top: 100px
     .slider-home
         height: calc(100vh - 100px - 180px)
-        background: pink
+        @media (max-width: 800px)
+            height: 80vh
         .slide
             height: 100%
             display: flex
@@ -11,4 +14,5 @@
             background-position: center
             background-size: cover
             text-align: center
-            color: $white
+            a
+                color: $white

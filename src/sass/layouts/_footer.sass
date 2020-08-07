@@ -7,6 +7,9 @@ footer
         display: grid
         grid-template-columns: 4fr 2fr 2fr 2fr 2fr
         grid-gap: 40px
+        @media (max-width: 800px)
+            grid-template-columns: 1fr
+            grid-gap: 10px
         a
             font-family: $bold
         p

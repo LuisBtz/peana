@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Suisse BP Serif';
+    src: url('../fonts/SuisseBPSerif-Medium.eot');
+    src: url('../fonts/SuisseBPSerif-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SuisseBPSerif-Medium.woff2') format('woff2'),
+        url('../fonts/SuisseBPSerif-Medium.woff') format('woff'),
+        url('../fonts/SuisseBPSerif-Medium.ttf') format('truetype'),
+        url('../fonts/SuisseBPSerif-Medium.svg#SuisseBPSerif-Medium') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+    -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+    font-family: 'Suisse BP Int';
+    src: url('../fonts/SuisseBPIntl-Medium.eot');
+    src: url('../fonts/SuisseBPIntl-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SuisseBPIntl-Medium.woff2') format('woff2'),
+        url('../fonts/SuisseBPIntl-Medium.woff') format('woff'),
+        url('../fonts/SuisseBPIntl-Medium.ttf') format('truetype'),
+        url('../fonts/SuisseBPIntl-Medium.svg#SuisseBPIntl-Medium') format('svg');
+    font-weight: 500;
+    font-style: bold;
+    font-display: swap;
+    -webkit-font-smoothing: antialiased;
+}

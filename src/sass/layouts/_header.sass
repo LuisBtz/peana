@@ -14,14 +14,27 @@
                 &:nth-child(2)
                     top: 0
                     transform: rotate(-45deg)
+        .lang
+            opacity: 1
+            transition: all 1350ms ease-in-out
+            display: block
 nav
     display: flex
+    background: #fff
     justify-content: space-between
     height: 100px
+    position: fixed
+    left: 0
+    width: 100%
+    box-sizing: border-box
+    top: 0
+    padding: 0 25px
+    z-index: 2
     @media (max-width: 800px)
         display: block
-        background: $white
+        background: #fff
         position: fixed
+        z-index: 2
         left: 0
         top: 0
         height: 95px
@@ -37,7 +50,7 @@ nav
         margin-top: 30px
         @media (max-width: 800px)
             position: absolute
-            left: 20px
+            left: 25px
     ul.nav
         display: flex
         align-self: center
@@ -64,7 +77,12 @@ nav
         width: 10%
         text-align: right
         @media (max-width: 800px)
+            opacity: 0
             display: none
+            position: absolute
+            bottom: 80px
+            right: 50px
+            transition: all 350ms ease-in-out
     .ham
         display: none
         @media (max-width: 800px)
@@ -72,7 +90,7 @@ nav
             width: 40px
             position: absolute
             top: 40px
-            right: 20px
+            right: 25px
             cursor: pointer
             transition: all 350ms ease-in-out
             .line

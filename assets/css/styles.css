@@ -39,18 +39,29 @@ body {
   font-family: "Suisse BP Serif";
   font-size: 16px;
   line-height: 1.2;
+  webkit-font-smoothing: antialiased;
 }
 
 .container {
-  padding: 0 20px;
+  padding: 100px 20px 0 20px;
 }
 
-a:hover {
+a:not(.disable):hover {
   font-family: "Suisse BP Int";
 }
 
 b, strong {
   font-family: "Suisse BP Int";
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 2.5rem;
+  }
 }
 
 h2 {
@@ -439,23 +450,40 @@ hr {
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
+  .clicked .lang {
+    opacity: 1;
+    -webkit-transition: all 1350ms ease-in-out;
+    -o-transition: all 1350ms ease-in-out;
+    transition: all 1350ms ease-in-out;
+    display: block;
+  }
 }
 
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background: #fff;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
   height: 100px;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  top: 0;
+  padding: 0 25px;
+  z-index: 2;
 }
 
 @media (max-width: 800px) {
   nav {
     display: block;
-    background: #EBE4D0;
+    background: #fff;
     position: fixed;
+    z-index: 2;
     left: 0;
     top: 0;
     height: 95px;
@@ -480,7 +508,7 @@ nav .logo {
 @media (max-width: 800px) {
   nav .logo {
     position: absolute;
-    left: 20px;
+    left: 25px;
   }
 }
 
@@ -532,7 +560,14 @@ nav .lang {
 
 @media (max-width: 800px) {
   nav .lang {
+    opacity: 0;
     display: none;
+    position: absolute;
+    bottom: 80px;
+    right: 50px;
+    -webkit-transition: all 350ms ease-in-out;
+    -o-transition: all 350ms ease-in-out;
+    transition: all 350ms ease-in-out;
   }
 }
 
@@ -546,7 +581,7 @@ nav .ham {
     width: 40px;
     position: absolute;
     top: 40px;
-    right: 20px;
+    right: 25px;
     cursor: pointer;
     -webkit-transition: all 350ms ease-in-out;
     -o-transition: all 350ms ease-in-out;
@@ -561,6 +596,10 @@ nav .ham {
     -o-transition: all 350ms ease-in-out;
     transition: all 350ms ease-in-out;
   }
+}
+
+footer {
+  padding: 0 20px;
 }
 
 footer hr {
@@ -588,12 +627,6 @@ footer .footer-container a {
 
 footer .footer-container p {
   padding-bottom: 20px;
-}
-
-@media (max-width: 800px) {
-  #home {
-    margin-top: 100px;
-  }
 }
 
 #home .slider-home {
@@ -628,4 +661,36 @@ footer .footer-container p {
 
 #home .slider-home .slide a {
   color: #EBE4D0;
+}
+
+#about {
+  padding: 100px 10% 0 10%;
+}
+
+#about .description {
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  #about .description {
+    width: 100%;
+  }
+}
+
+#about .info {
+  width: 80%;
+  margin: 100px auto 0 auto;
+  text-align: center;
+}
+
+#about .info img {
+  width: 80%;
+}
+
+@media (max-width: 800px) {
+  #about .info img {
+    width: 90%;
+  }
 }

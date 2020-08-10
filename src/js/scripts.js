@@ -13,5 +13,16 @@ $(document).ready(function () {
     autoplayTimeout: 2500,
     mouseDrag: false,
     touchDrag: false
-})
+});
+
+
+
+var path = window.location.href; // because the 'href' property of the DOM element is the absolute path
+ $('ul a').each(function() {
+  if (this.href === path) {
+   $(this).addClass('active');
+  }
+ });
+
+ 
 });

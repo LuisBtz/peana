@@ -46,6 +46,10 @@ body {
   padding: 100px 20px 0 20px;
 }
 
+a {
+  cursor: pointer;
+}
+
 a:not(.disable):hover {
   font-family: "Suisse BP Int";
 }
@@ -79,6 +83,35 @@ hr {
   border-left: none;
   border-right: none;
   border-bottom: none;
+}
+
+img {
+  width: 100%;
+}
+
+.active {
+  font-family: "Suisse BP Int";
+}
+
+.nav-cat {
+  padding: 50px 0 100px 0;
+}
+
+.nav-cat ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 100%;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.nav-cat ul a {
+  font-size: 2rem;
 }
 
 /**

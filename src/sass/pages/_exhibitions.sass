@@ -1,0 +1,43 @@
+#exhibitions
+    margin-bottom: 100px
+    section.current-grid, section.upcoming-grid
+        article
+            margin-bottom: 50px
+            a
+                .info
+                    margin-top: 10px
+                    h3, b
+                        font-size: 2rem
+                    p
+                        font-size: 1.125rem
+    section.archive-grid
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        grid-gap: 9vw 7vw
+        @media (max-width: 800px)
+            grid-template-columns: 1fr
+            grid-gap: 50px
+        .info
+            margin-top: 10px
+#exhibition
+    .title
+        margin-top: 100px
+        margin-bottom: 100px
+        text-align: center
+        h2, b
+            font-size: 3rem
+        p
+            font-size: 2rem
+    .nav-ex
+        margin-bottom: 100px
+        ul
+            display: flex
+            flex-direction: row
+            justify-content: space-around
+            li
+                a
+                    font-family: $bold
+.slideex
+    height: 70vh
+    img
+        height: 70vh

@@ -89,7 +89,7 @@ img {
   width: 100%;
 }
 
-.active {
+.active-link {
   font-family: "Suisse BP Int";
 }
 
@@ -111,7 +111,33 @@ img {
 }
 
 .nav-cat ul a {
+  font-size: 3rem;
+}
+
+@media (max-width: 800px) {
+  .nav-cat ul a {
+    font-size: 1.5rem;
+  }
+}
+
+.info {
+  width: 80%;
+  margin: 0 auto 0 auto;
+  text-align: center;
+}
+
+.info p {
   font-size: 2rem;
+}
+
+.info img {
+  width: 80%;
+}
+
+@media (max-width: 800px) {
+  .info img {
+    width: 90%;
+  }
 }
 
 /**
@@ -536,6 +562,7 @@ nav .logo {
   font-size: 2rem;
   width: 10%;
   margin-top: 30px;
+  text-transform: uppercase;
 }
 
 @media (max-width: 800px) {
@@ -712,18 +739,81 @@ footer .footer-container p {
   }
 }
 
-#about .info {
-  width: 80%;
-  margin: 100px auto 0 auto;
-  text-align: center;
+#exhibitions {
+  margin-bottom: 100px;
 }
 
-#about .info img {
-  width: 80%;
+#exhibitions section.current-grid article, #exhibitions section.upcoming-grid article {
+  margin-bottom: 50px;
+}
+
+#exhibitions section.current-grid article a .info, #exhibitions section.upcoming-grid article a .info {
+  margin-top: 10px;
+}
+
+#exhibitions section.current-grid article a .info h3, #exhibitions section.current-grid article a .info b, #exhibitions section.upcoming-grid article a .info h3, #exhibitions section.upcoming-grid article a .info b {
+  font-size: 2rem;
+}
+
+#exhibitions section.current-grid article a .info p, #exhibitions section.upcoming-grid article a .info p {
+  font-size: 1.125rem;
+}
+
+#exhibitions section.archive-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 9vw 7vw;
 }
 
 @media (max-width: 800px) {
-  #about .info img {
-    width: 90%;
+  #exhibitions section.archive-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
   }
+}
+
+#exhibitions section.archive-grid .info {
+  margin-top: 10px;
+}
+
+#exhibition .title {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+#exhibition .title h2, #exhibition .title b {
+  font-size: 3rem;
+}
+
+#exhibition .title p {
+  font-size: 2rem;
+}
+
+#exhibition .nav-ex {
+  margin-bottom: 100px;
+}
+
+#exhibition .nav-ex ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+#exhibition .nav-ex ul li a {
+  font-family: "Suisse BP Int";
+}
+
+.slideex {
+  height: 70vh;
+}
+
+.slideex img {
+  height: 70vh;
 }

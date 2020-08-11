@@ -1,15 +1,27 @@
 extends ../layouts/default-layout.pug
 block content
-  #about.container
-    .description
-      h1 <b>PEANA</b> is an exhibition platform committed to the promotion of contemporary art that seeks to facilitate a <b>material and conceptual exchange</b> between local and international artistic practices.
-    hr
+  #exhibition.container
+    section.title
+        h2 Usando este cuerpo, pensando en la fuente
+        b Tomás Díaz Cedeño
+        p 05.27.2020 — 08.15.2020
+    .nav-ex
+      ul
+        li
+          a(href="#text") Text
+        li
+          a(href="#artist") Artist
+        li
+          a(href="#exhibition") Exhibitions
+        li
+          a(href="#press") Press
+  .slideex.owl-carousel.owl-theme
+    img(src="assets/images/slide1.jpg", alt="")
+    img(src="assets/images/slide2.jpg", alt="")
+    img(src="assets/images/slide3.jpg", alt="")
+    img(src="assets/images/slide4.jpg", alt="")
+  .container
     .info
-      br
-      br
-      br
-      br
-      br
       p Employing an adaptable curatorial model, <b>PEANA maintains a permanent gallery</b> in Monterrey, Mexico, <b>while also organizing "off-site" exhibitions</b> in the United States and Europe.
       br
       br
@@ -17,9 +29,4 @@ block content
       br
       br
       br
-      br
-      br
-      img(src="assets/images/about.jpg", alt="PEANA")
-      br
-      br
-      br
+      hr

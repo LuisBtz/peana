@@ -1,0 +1,28 @@
+extends ../layouts/default-layout.pug
+block content
+  #exhibitions.container
+    .nav-cat
+        ul
+            li
+                a.active-link(href="viewing-single.html") Current
+            li
+                a(href="viewing-single-up.html") Upcoming
+            li
+                a(href="viewing-single-ar") Archive
+    section.current-grid
+        article
+            a(href="virtual-single.html")
+                img(src="assets/images/about.jpg", alt="Peana")
+                .info-ex
+                    h3 Usando este cuerpo, <br>pensando en la fuente
+                    b Tomás Díaz Cedeño
+                    p 05.27.2020 — 08.15.2020
+        article
+            a(href="virtual-single.html")
+                img(src="assets/images/bg-slide1.jpg", alt="Peana")
+                .info-ex
+                    h3 Usando este cuerpo, <br>pensando en la fuente
+                    b Tomás Díaz Cedeño
+                    p 05.27.2020 — 08.15.2020
+
+                

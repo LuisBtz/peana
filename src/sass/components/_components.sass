@@ -1,9 +1,10 @@
 a
     cursor: pointer
 nav a
-    &:hover
-        font-family: $bold
-        letter-spacing: .49px
+    &:not(.disable)
+        &:hover
+            font-family: $bold
+            letter-spacing: .49px
 .active
     font-family: $bold !important
 b, strong

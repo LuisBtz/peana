@@ -55,7 +55,7 @@ a {
   cursor: pointer;
 }
 
-nav a:hover {
+nav a:not(.disable):hover {
   font-family: "Suisse BP Int";
   letter-spacing: .49px;
 }
@@ -864,6 +864,17 @@ footer .footer-container p {
   text-align: center;
 }
 
+#home .slider-home .slide p.current {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  font-size: 1.125rem;
+  font-family: "Suisse BP Int";
+}
+
 #home .slider-home .slide a {
   color: #EBE4D0;
 }
@@ -1014,16 +1025,6 @@ footer .footer-container p {
   }
 }
 
-#artists .top li:hover img {
-  display: block;
-  -webkit-transform: translateY(-150px);
-  -ms-transform: translateY(-150px);
-  transform: translateY(-150px);
-  -webkit-transform: translateX(-40%);
-  -ms-transform: translateX(-40%);
-  transform: translateX(-40%);
-}
-
 #artists .top li a {
   font-size: 4.375rem;
 }
@@ -1032,8 +1033,23 @@ footer .footer-container p {
   display: none;
   position: absolute;
   z-index: 3;
-  right: 0%;
   width: 30%;
+}
+
+#artists .top li:nth-child(even):hover img {
+  left: 5%;
+  display: block;
+  -webkit-transform: translateY(-150px);
+  -ms-transform: translateY(-150px);
+  transform: translateY(-150px);
+}
+
+#artists .top li:nth-child(odd):hover img {
+  right: 5%;
+  display: block;
+  -webkit-transform: translateY(-150px);
+  -ms-transform: translateY(-150px);
+  transform: translateY(-150px);
 }
 
 #artists #ex {

@@ -10,19 +10,25 @@
                 &:hover
                     img
                         display: none !important
-            &:hover
-                img
-                    display: block
-                    transform: translateY(-150px)
-                    transform: translateX(-40%)
             a
                 font-size: 4.375rem
             img
                 display: none
                 position: absolute
                 z-index: 3
-                right: 0%
                 width: 30%
+            &:nth-child(even)
+                &:hover
+                    img
+                        left: 5%
+                        display: block
+                        transform: translateY(-150px)
+            &:nth-child(odd)
+                &:hover
+                    img
+                        right: 5%
+                        display: block
+                        transform: translateY(-150px)
     #ex
         margin-bottom: 100px
         .item

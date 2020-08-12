@@ -1,7 +1,6 @@
-
-
-  
 $(document).ready(function () {
+
+    $('body').css('display', 'none').fadeIn(500);
 
     $(document).on('click', 'a[href^="#"]', function (e) {
         e.preventDefault();

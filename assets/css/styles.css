@@ -1107,3 +1107,34 @@ footer .footer-container p {
 #new .nav-art a {
   font-family: "Suisse BP Int";
 }
+
+#contact .nav-cont {
+  text-align: center;
+  margin-top: 100px;
+}
+
+#contact .nav-cont ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 50px;
+}
+
+#contact .nav-cont ul li a {
+  text-align: center;
+  font-size: 1.125rem;
+}
+
+#contact .big li, #contact .big a {
+  font-size: 2rem;
+}
+
+#contact .big li a, #contact .big a a {
+  font-size: 2rem !important;
+}
+
+#contact #map {
+  width: 80%;
+  margin: 50px auto;
+  height: 400px;
+  background: pink;
+}

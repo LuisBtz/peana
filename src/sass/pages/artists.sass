@@ -1,0 +1,32 @@
+#artists
+    .top
+        position: relative
+        h3
+            margin-bottom: 100px
+            margin-top: 50px
+        text-align: center
+        li
+            @media (max-width: 800px)
+                &:hover
+                    img
+                        display: none !important
+            &:hover
+                img
+                    display: block
+                    transform: translateY(-150px)
+            a
+                font-size: 4.375rem
+            img
+                display: none
+                position: absolute
+                z-index: 3
+                right: 20px
+                width: 300px
+    #ex
+        margin-bottom: 100px
+        .item
+            margin-bottom: 5px
+            a, p
+                font-size: 2rem
+    
+

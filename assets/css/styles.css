@@ -60,6 +60,10 @@ nav a:hover {
   letter-spacing: .49px;
 }
 
+.active {
+  font-family: "Suisse BP Int" !important;
+}
+
 b, strong {
   font-family: "Suisse BP Int";
 }
@@ -259,6 +263,20 @@ img {
 
 .space {
   padding: 50px;
+}
+
+.title {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.title h2, .title b {
+  font-size: 3rem;
+}
+
+.title p {
+  font-size: 2rem;
 }
 
 /**
@@ -903,25 +921,11 @@ footer .footer-container p {
   margin-top: 10px;
 }
 
-#exhibition .title {
-  margin-top: 100px;
-  margin-bottom: 100px;
-  text-align: center;
-}
-
-#exhibition .title h2, #exhibition .title b {
-  font-size: 3rem;
-}
-
-#exhibition .title p {
-  font-size: 2rem;
-}
-
-#exhibition .nav-ex {
+.nav-ex {
   margin-bottom: 100px;
 }
 
-#exhibition .nav-ex ul {
+.nav-ex ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -933,39 +937,31 @@ footer .footer-container p {
   justify-content: space-around;
 }
 
-#exhibition .nav-ex ul li a {
+.nav-ex ul li a {
   font-family: "Suisse BP Int";
 }
 
-#exhibition .slideex {
-  height: 70vh;
-}
-
-#exhibition .slideex img {
-  height: 70vh;
-}
-
-#exhibition .info {
+.info {
   width: 80%;
   margin: 0 auto 0 auto;
   text-align: center;
 }
 
-#exhibition .info p {
+.info p {
   font-size: 2rem;
 }
 
-#exhibition .info img {
+.info img {
   width: 80%;
 }
 
 @media (max-width: 800px) {
-  #exhibition .info img {
+  .info img {
     width: 90%;
   }
 }
 
-#exhibition .linksection h3.title-sec {
+.linksection h3.title-sec {
   margin-top: 100px;
 }
 
@@ -996,4 +992,118 @@ footer .footer-container p {
 
 #virtual-single .top-bg p {
   font-size: 2rem;
+}
+
+#artists .top {
+  position: relative;
+  text-align: center;
+}
+
+#artists .top h3 {
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+@media (max-width: 800px) {
+  #artists .top li:hover img {
+    display: none !important;
+  }
+}
+
+#artists .top li:hover img {
+  display: block;
+  -webkit-transform: translateY(-150px);
+  -ms-transform: translateY(-150px);
+  transform: translateY(-150px);
+}
+
+#artists .top li a {
+  font-size: 4.375rem;
+}
+
+#artists .top li img {
+  display: none;
+  position: absolute;
+  z-index: 3;
+  right: 20px;
+  width: 300px;
+}
+
+#artists #ex {
+  margin-bottom: 100px;
+}
+
+#artists #ex .item {
+  margin-bottom: 5px;
+}
+
+#artists #ex .item a, #artists #ex .item p {
+  font-size: 2rem;
+}
+
+#news .nav.years {
+  margin-top: 100px;
+}
+
+#news .nav.years ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+@media (max-width: 800px) {
+  #news .nav.years ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+#news .nav.years ul li a {
+  font-size: 3rem;
+  font-family: "Suisse BP Serif";
+}
+
+#news .nav.years ul li a:hover {
+  font-family: "Suisse BP Int";
+  letter-spacing: 2.8px !important;
+}
+
+#news .nav.years ul li .active:hover {
+  letter-spacing: 0 !important;
+}
+
+#new .title {
+  margin-top: 200px;
+}
+
+#new .nav-art {
+  padding: 50px 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+#new .nav-art a {
+  font-family: "Suisse BP Int";
 }

@@ -6,6 +6,8 @@
             display: grid
             grid-template-columns: 1fr 1fr 1fr 1fr
             grid-gap: 50px
+            @media (max-width: 800px)
+                grid-template-columns: 1fr
             li
                 a
                     text-align: center
@@ -19,4 +21,8 @@
         width: 80%
         margin: 50px auto
         height: 400px
-        background: pink
+        @media (max-width: 800px)
+            width: 100%
+        iframe
+            width: 100%
+            height: 100%

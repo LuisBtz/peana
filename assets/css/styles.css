@@ -1119,6 +1119,12 @@ footer .footer-container p {
   grid-gap: 50px;
 }
 
+@media (max-width: 800px) {
+  #contact .nav-cont ul {
+    grid-template-columns: 1fr;
+  }
+}
+
 #contact .nav-cont ul li a {
   text-align: center;
   font-size: 1.125rem;
@@ -1136,5 +1142,15 @@ footer .footer-container p {
   width: 80%;
   margin: 50px auto;
   height: 400px;
-  background: pink;
+}
+
+@media (max-width: 800px) {
+  #contact #map {
+    width: 100%;
+  }
+}
+
+#contact #map iframe {
+  width: 100%;
+  height: 100%;
 }

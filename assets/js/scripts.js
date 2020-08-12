@@ -38,6 +38,18 @@ $(document).ready(function () {
     });
 
 
+    $('.slider-01').owlCarousel({
+        loop:true,
+        nav:false,
+        items:3,
+        margin:20,
+        autoWidth:true,
+        autoplay:true,
+        dots: false,
+        autoplayTimeout: 2500
+    });
+
+
 
 var path = window.location.href; // because the 'href' property of the DOM element is the absolute path
  $('ul a').each(function() {

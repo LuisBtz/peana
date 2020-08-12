@@ -1,6 +1,6 @@
 extends ../layouts/default-layout.pug
 block content
-  #home.container(data-barba="container" data-barba-namespace="home")
+  #home.container
     .
       <style>
         body {
@@ -13,12 +13,12 @@ block content
       </style>
     .slider-home.owl-carousel.owl-theme
       .slide(style="background-image: url(assets/images/bg-slide1.jpg)")
-        a(href="#")
+        a(href="#").info-lead
           h2 Usando este cuerpo, <br>pensando en la fuente
           b Tomás Díaz Cedeño
           p 05.27.2020 — 08.15.2020
       .slide(style="background-image: url(assets/images/about.jpg)")
-        a(href="#")
+        a(href="#").info-lead
           h2 1Usando este cuerpo, <br>pensando en la fuente
           b Tomás Díaz Cedeño
           p 05.27.2020 — 08.15.2020

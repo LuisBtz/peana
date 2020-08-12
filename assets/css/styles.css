@@ -57,6 +57,7 @@ a {
 
 nav a:hover {
   font-family: "Suisse BP Int";
+  letter-spacing: .49px;
 }
 
 b, strong {
@@ -79,6 +80,14 @@ h2 {
 
 h3 {
   font-size: 1.125rem;
+}
+
+.info-lead h2, .info-lead h1, .info-lead b {
+  font-size: 3rem;
+}
+
+.info-lead p {
+  font-size: 2rem;
 }
 
 .newsletter-button {
@@ -645,7 +654,13 @@ nav ul.nav {
   }
 }
 
+nav ul.nav li {
+  position: relative;
+}
+
 nav ul.nav li a {
+  position: absolute;
+  display: contents;
   text-transform: capitalize;
 }
 
@@ -880,4 +895,33 @@ footer .footer-container p {
 
 #exhibition .linksection h3.title-sec {
   margin-top: 100px;
+}
+
+#virtual-single .top-bg {
+  height: calc(100vh - 100px);
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #EBE4D0;
+}
+
+@media (max-width: 800px) {
+  #virtual-single .top-bg {
+    height: 80vh;
+  }
+}
+
+#virtual-single .top-bg h1, #virtual-single .top-bg b {
+  font-size: 3rem;
+}
+
+#virtual-single .top-bg p {
+  font-size: 2rem;
 }

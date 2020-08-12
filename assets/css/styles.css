@@ -82,6 +82,10 @@ h3 {
   font-size: 1.125rem;
 }
 
+h6 {
+  font-size: 4vw;
+}
+
 .info-lead h2, .info-lead h1, .info-lead b {
   font-size: 3rem;
 }
@@ -187,6 +191,74 @@ img {
 
 .linksection .loop-links .item p {
   font-size: 1.125rem;
+}
+
+.image-text .info-text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.image-text .info-text .image {
+  padding: 50px;
+}
+
+.image-text .info-text .image img {
+  width: 100%;
+}
+
+.image-text .info-text .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.image-text .info-text .text h2 {
+  font-size: 4.375rem;
+}
+
+.video img {
+  height: auto;
+  width: 100%;
+}
+
+.cuadros {
+  margin-bottom: 100px;
+}
+
+.cuadros .info-text {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 100px;
+}
+
+@media (max-width: 800px) {
+  .cuadros .info-text {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cuadros .info-text .img img {
+  width: 100%;
+}
+
+.cuadros .info-text .info-cuadro {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.cuadros .info-text .info-cuadro p {
+  font-size: 1.125rem;
+  margin-bottom: 5px;
+}
+
+.space {
+  padding: 50px;
 }
 
 /**

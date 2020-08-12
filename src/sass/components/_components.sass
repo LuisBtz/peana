@@ -14,6 +14,8 @@ h2
     font-size: 2rem
 h3
     font-size: 1.125rem
+h6
+    font-size: 4vw
 .info-lead
     h2, h1, b
         font-size: 3rem
@@ -70,3 +72,40 @@ img
                 margin-bottom: 5px
             p
                 font-size: 1.125rem
+.image-text
+    .info-text
+        display: grid
+        grid-template-columns: 1fr 1fr
+        .image
+            padding: 50px
+            img
+                width: 100%
+        .text
+            display: flex
+            justify-content: center
+            align-items: center
+            h2
+                font-size: 4.375rem
+.video
+    img
+        height: auto
+        width: 100%
+.cuadros
+    margin-bottom: 100px
+    .info-text
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        grid-gap: 100px
+        @media (max-width: 800px)
+            grid-template-columns: 1fr
+        .img
+            img
+                width: 100%
+        .info-cuadro
+            margin-top: 20px
+            text-align: left
+            p
+                font-size: 1.125rem
+                margin-bottom: 5px
+.space
+    padding: 50px

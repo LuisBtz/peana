@@ -40,6 +40,11 @@ body {
   font-size: 16px;
   line-height: 1.2;
   webkit-font-smoothing: antialiased;
+  opacity: 1;
+  -webkit-transition: 0.7s opacity;
+  -o-transition: 0.7s opacity;
+  transition: 0.7s opacity;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -50,7 +55,7 @@ a {
   cursor: pointer;
 }
 
-a:not(.disable):hover {
+nav a:hover {
   font-family: "Suisse BP Int";
 }
 
@@ -70,6 +75,10 @@ h1 {
 
 h2 {
   font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.125rem;
 }
 
 .newsletter-button {
@@ -120,24 +129,55 @@ img {
   }
 }
 
-.info {
+.info-text {
   width: 80%;
   margin: 0 auto 0 auto;
   text-align: center;
 }
 
-.info p {
+.info-text p {
   font-size: 2rem;
 }
 
-.info img {
+.info-text img {
   width: 80%;
 }
 
 @media (max-width: 800px) {
-  .info img {
+  .info-text img {
     width: 90%;
   }
+}
+
+.linksection {
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.linksection .loop-links {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 800px) {
+  .linksection .loop-links {
+    grid-template-columns: 1fr;
+  }
+}
+
+.linksection .loop-links .item {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.linksection .loop-links .item h3 {
+  margin-bottom: 5px;
+}
+
+.linksection .loop-links .item p {
+  font-size: 1.125rem;
 }
 
 /**
@@ -810,10 +850,34 @@ footer .footer-container p {
   font-family: "Suisse BP Int";
 }
 
-.slideex {
+#exhibition .slideex {
   height: 70vh;
 }
 
-.slideex img {
+#exhibition .slideex img {
   height: 70vh;
+}
+
+#exhibition .info {
+  width: 80%;
+  margin: 0 auto 0 auto;
+  text-align: center;
+}
+
+#exhibition .info p {
+  font-size: 2rem;
+}
+
+#exhibition .info img {
+  width: 80%;
+}
+
+@media (max-width: 800px) {
+  #exhibition .info img {
+    width: 90%;
+  }
+}
+
+#exhibition .linksection h3.title-sec {
+  margin-top: 100px;
 }

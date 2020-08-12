@@ -1015,6 +1015,9 @@ footer .footer-container p {
   -webkit-transform: translateY(-150px);
   -ms-transform: translateY(-150px);
   transform: translateY(-150px);
+  -webkit-transform: translateX(-40%);
+  -ms-transform: translateX(-40%);
+  transform: translateX(-40%);
 }
 
 #artists .top li a {
@@ -1025,8 +1028,8 @@ footer .footer-container p {
   display: none;
   position: absolute;
   z-index: 3;
-  right: 20px;
-  width: 300px;
+  right: 0%;
+  width: 30%;
 }
 
 #artists #ex {

@@ -868,6 +868,10 @@ footer .footer-container p {
   color: #EBE4D0;
 }
 
+#home .slider-home .slide h2, #home .slider-home .slide p {
+  font-family: "Suisse BP Serif";
+}
+
 #about {
   padding: 100px 10% 0 10%;
 }

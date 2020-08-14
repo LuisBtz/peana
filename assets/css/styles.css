@@ -804,6 +804,10 @@ nav .lang {
   text-align: right;
 }
 
+nav .lang a {
+  font-size: 0.8rem;
+}
+
 @media (max-width: 800px) {
   nav .lang {
     opacity: 0;
@@ -873,6 +877,11 @@ footer .footer-container a {
 
 footer .footer-container p {
   padding-bottom: 20px;
+  font-size: 0.8rem;
+}
+
+footer .footer-container a {
+  font-size: 0.8rem;
 }
 
 #home .slider-home {

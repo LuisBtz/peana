@@ -1,18 +1,10 @@
 extends ../layouts/default-layout.pug
 block content
-  #exhibitions.container.m-top
-    .nav-cat
-        ul
-            li
-                a.active-link(href="viewing-single.html") Current
-            li
-                a(href="viewing-single-up.html") Upcoming
-            li
-                a(href="viewing-single-ar.html") Archive
-    section.current-grid
+  #exhibitions.container.m-top.viewing-f
+    section.current-grid.ajustado
         article
             a(href="virtual-single.html")
-                img(src="assets/images/about.jpg", alt="Peana")
+                img(src="assets/images/about-corta.jpg", alt="Peana")
                 .info-ex
                     h3 Usando este cuerpo, <br>pensando en la fuente
                     b Tomás Díaz Cedeño

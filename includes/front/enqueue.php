@@ -11,7 +11,7 @@ function pl_enqueue(){
 
     wp_register_script( 'pl_jquery', get_template_directory_uri() . '/assets/assets/js/jquery.min.js', array(), false, true );
     wp_register_script( 'pl_owl', get_template_directory_uri() . '/assets/assets/js/owl.carousel.min.js', array(), false, true );
-    wp_register_script( 'pl_action', get_template_directory_uri() . '/assets/js/script.js', array(), false, true );
+    wp_register_script( 'pl_action', get_template_directory_uri() . '/assets/assets/js/scripts.min.js', array(), false, true );
   
 
 

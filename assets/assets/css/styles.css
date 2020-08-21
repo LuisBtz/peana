@@ -1,9 +1,32 @@
-html, body, div, h1, h2, h3, h4, h6, h6, span, b, span, i, em, strong, ul, li, p, hr {
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h6,
+h6,
+span,
+b,
+span,
+i,
+em,
+strong,
+ul,
+li,
+p,
+hr {
   margin: 0;
   padding: 0;
   -moz-osx-font-smoothings: grayscale;
   -webkit-font-smoothing: antialiased;
   font-weight: initial;
+}
+
+img {
+  width: 100%;
+  height: 100%;
 }
 
 a {
@@ -16,9 +39,14 @@ ul {
 }
 
 @font-face {
-  font-family: 'Suisse BP Serif';
+  font-family: "Suisse BP Serif";
   src: url("../fonts/SuisseBPSerif-Medium.eot");
-  src: url("../fonts/SuisseBPSerif-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/SuisseBPSerif-Medium.woff2") format("woff2"), url("../fonts/SuisseBPSerif-Medium.woff") format("woff"), url("../fonts/SuisseBPSerif-Medium.ttf") format("truetype"), url("../fonts/SuisseBPSerif-Medium.svg#SuisseBPSerif-Medium") format("svg");
+  src: url("../fonts/SuisseBPSerif-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/SuisseBPSerif-Medium.woff2") format("woff2"),
+    url("../fonts/SuisseBPSerif-Medium.woff") format("woff"),
+    url("../fonts/SuisseBPSerif-Medium.ttf") format("truetype"),
+    url("../fonts/SuisseBPSerif-Medium.svg#SuisseBPSerif-Medium") format("svg");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -26,9 +54,14 @@ ul {
 }
 
 @font-face {
-  font-family: 'Suisse BP Int';
+  font-family: "Suisse BP Int";
   src: url("../fonts/SuisseBPIntl-Medium.eot");
-  src: url("../fonts/SuisseBPIntl-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/SuisseBPIntl-Medium.woff2") format("woff2"), url("../fonts/SuisseBPIntl-Medium.woff") format("woff"), url("../fonts/SuisseBPIntl-Medium.ttf") format("truetype"), url("../fonts/SuisseBPIntl-Medium.svg#SuisseBPIntl-Medium") format("svg");
+  src: url("../fonts/SuisseBPIntl-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/SuisseBPIntl-Medium.woff2") format("woff2"),
+    url("../fonts/SuisseBPIntl-Medium.woff") format("woff"),
+    url("../fonts/SuisseBPIntl-Medium.ttf") format("truetype"),
+    url("../fonts/SuisseBPIntl-Medium.svg#SuisseBPIntl-Medium") format("svg");
   font-weight: 500;
   font-style: bold;
   font-display: swap;
@@ -62,14 +95,15 @@ a {
 
 nav a:not(.disable):hover {
   font-family: "Suisse BP Int";
-  letter-spacing: .49px;
+  letter-spacing: 0.49px;
 }
 
 .active {
   font-family: "Suisse BP Int" !important;
 }
 
-b, strong {
+b,
+strong {
   font-family: "Suisse BP Int";
 }
 
@@ -95,7 +129,9 @@ h6 {
   font-size: 4vw;
 }
 
-.info-lead h2, .info-lead h1, .info-lead b {
+.info-lead h2,
+.info-lead h1,
+.info-lead b {
   font-size: 3rem;
 }
 
@@ -283,7 +319,8 @@ img {
   text-align: center;
 }
 
-.title h2, .title b {
+.title h2,
+.title b {
   font-size: 3rem;
 }
 
@@ -295,16 +332,17 @@ img {
   padding-top: 170px;
 }
 
-.info-ex h3, .info-ex b {
+.info-ex h3,
+.info-ex b {
   font-size: 1.3rem;
 }
 
 .info-ex p {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .info-ex span {
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-family: "Suisse BP Int";
 }
 
@@ -524,7 +562,8 @@ img {
   transition: opacity 400ms ease;
 }
 
-.owl-carousel .owl-item .owl-lazy[src^=""], .owl-carousel .owl-item .owl-lazy:not([src]) {
+.owl-carousel .owl-item .owl-lazy[src^=""],
+.owl-carousel .owl-item .owl-lazy:not([src]) {
   max-height: 0;
 }
 
@@ -604,20 +643,20 @@ img {
   -webkit-tap-highlight-color: transparent;
 }
 
-.owl-theme .owl-nav [class*='owl-'] {
-  color: #FFF;
+.owl-theme .owl-nav [class*="owl-"] {
+  color: #fff;
   font-size: 14px;
   margin: 5px;
   padding: 4px 7px;
-  background: #D6D6D6;
+  background: #d6d6d6;
   display: inline-block;
   cursor: pointer;
   border-radius: 3px;
 }
 
-.owl-theme .owl-nav [class*='owl-']:hover {
+.owl-theme .owl-nav [class*="owl-"]:hover {
   background: #869791;
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -645,7 +684,7 @@ img {
   width: 10px;
   height: 10px;
   margin: 5px 7px;
-  background: #D6D6D6;
+  background: #d6d6d6;
   display: block;
   -webkit-backface-visibility: visible;
   -webkit-transition: opacity 200ms ease;
@@ -654,7 +693,8 @@ img {
   border-radius: 30px;
 }
 
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
   background: #869791;
 }
 
@@ -926,10 +966,11 @@ footer .footer-container a {
 }
 
 #home .slider-home .slide a {
-  color: #EBE4D0;
+  color: #ebe4d0;
 }
 
-#home .slider-home .slide h2, #home .slider-home .slide p {
+#home .slider-home .slide h2,
+#home .slider-home .slide p {
   font-family: "Suisse BP Serif";
 }
 
@@ -954,19 +995,25 @@ footer .footer-container a {
   margin-bottom: 100px;
 }
 
-#exhibitions section.current-grid article, #exhibitions section.upcoming-grid article {
+#exhibitions section.current-grid article,
+#exhibitions section.upcoming-grid article {
   margin-bottom: 50px;
 }
 
-#exhibitions section.current-grid article a .info, #exhibitions section.upcoming-grid article a .info {
+#exhibitions section.current-grid article a .info,
+#exhibitions section.upcoming-grid article a .info {
   margin-top: 10px;
 }
 
-#exhibitions section.current-grid article a .info h3, #exhibitions section.current-grid article a .info b, #exhibitions section.upcoming-grid article a .info h3, #exhibitions section.upcoming-grid article a .info b {
+#exhibitions section.current-grid article a .info h3,
+#exhibitions section.current-grid article a .info b,
+#exhibitions section.upcoming-grid article a .info h3,
+#exhibitions section.upcoming-grid article a .info b {
   font-size: 2rem;
 }
 
-#exhibitions section.current-grid article a .info p, #exhibitions section.upcoming-grid article a .info p {
+#exhibitions section.current-grid article a .info p,
+#exhibitions section.upcoming-grid article a .info p {
   font-size: 1.125rem;
 }
 
@@ -1048,7 +1095,7 @@ footer .footer-container a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #EBE4D0;
+  color: #ebe4d0;
 }
 
 @media (max-width: 800px) {
@@ -1057,7 +1104,8 @@ footer .footer-container a {
   }
 }
 
-#virtual-single .top-bg h1, #virtual-single .top-bg b {
+#virtual-single .top-bg h1,
+#virtual-single .top-bg b {
   font-size: 3rem;
 }
 
@@ -1121,7 +1169,8 @@ footer .footer-container a {
   margin-bottom: 5px;
 }
 
-#artists #ex .item p, #artists #ex .item a {
+#artists #ex .item p,
+#artists #ex .item a {
   font-size: 1.3rem;
 }
 
@@ -1218,11 +1267,13 @@ footer .footer-container a {
   font-size: 1.125rem;
 }
 
-#contact .big li, #contact .big a {
+#contact .big li,
+#contact .big a {
   font-size: 2rem;
 }
 
-#contact .big li a, #contact .big a a {
+#contact .big li a,
+#contact .big a a {
   font-size: 2rem !important;
 }
 

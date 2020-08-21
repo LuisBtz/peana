@@ -925,7 +925,7 @@ footer .footer-container a {
 }
 
 #home .slider-home {
-  height: 650px;
+  height: 90vh;
 }
 
 @media (max-width: 800px) {

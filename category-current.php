@@ -2,7 +2,6 @@
 
 get_header();
 
-//Template Name: Template Exhibitions
 ?>
 <div class="container m-top" id="exhibitions">
     <div class="nav-cat">

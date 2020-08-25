@@ -2,7 +2,6 @@
 
 get_header();
 
-//Template Name: Template Exhibitions
 ?>
 <div class="container m-top" id="exhibitions">
     <div class="nav-cat">
@@ -34,7 +33,7 @@ get_header();
         $args = array(
             'post_type' => 'exhibitions',
             'post_status' => 'publish',
-            'category_name'  => 'current',
+            'category_name'  => 'upcoming',
             'posts_per_page' => '-1',
             'order' => 'ASC'
         );
@@ -65,6 +64,10 @@ get_header();
                 <?php
                 endwhile;
             wp_reset_postdata();
+               else: ?>
+
+
+<?php
         endif;
 
     ?>

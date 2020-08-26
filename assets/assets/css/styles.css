@@ -369,7 +369,6 @@ img {
  *  Owl Carousel - Core
  */
 .owl-carousel {
-    display: none;
     width: 100%;
     -webkit-tap-highlight-color: transparent;
     /* position relative and z-index fix webkit rendering fonts issue */
@@ -1055,6 +1054,7 @@ footer .footer-container a {
 
 .nav-ex ul li a {
     font-family: "Suisse BP Int";
+    text-transform: capitalize;
 }
 
 .info {

@@ -1,4 +1,6 @@
 jQuery(document).ready(function ($) {
+    $(".lang-item-first").after(" /");
+
     $("body").css("display", "none").fadeIn(500);
 
     $(document).on("click", 'a[href^="#"]', function (e) {

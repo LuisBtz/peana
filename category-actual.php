@@ -34,7 +34,7 @@ get_header();
         $args = array(
             'post_type' => 'exhibitions',
             'post_status' => 'publish',
-            'category_name'  => 'current',
+            'category_name'  => 'actual',
             'posts_per_page' => '-1',
             'order' => 'ASC'
         );

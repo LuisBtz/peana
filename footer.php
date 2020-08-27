@@ -1,14 +1,35 @@
 <footer>
         <hr>
         <div class="footer-container">
-          <p><b>PEANA</b> is an exhibition platform committed to the promotion of contemporary art that seeks to facilitate a <b>material and conceptual exchange</b> between local and international artistic practices.</p>
-          <p><b>Via Clodia 169 <br>SPGG, MX</b> <br>Monday – Friday  <br>10 am to 6 pm</p>
-          <p><b>New York <br>NY</b> <br>By appointment only</p>
-          <ul>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Facebook</a></li>
-          </ul>
-          <p class="newsletter-button">Newsletter</p>
+          <div><p><?php the_field('description', 'option'); ?></p></div>
+          <div><p><?php the_field('address', 'option'); ?></p></div>
+          <div>
+            <p><b>New York <br>NY</b><br><?php the_field('new_york', 'option'); ?></p>
+        </div>
+    
+    <?php if( have_rows('social', 'option') ): ?>
+
+    <div>
+    <ul>
+
+    <?php while( have_rows('social', 'option') ): the_row(); 
+      $social_link = get_sub_field('social_link');
+    ?>
+
+
+        <li><a href="<?php echo $social_link['url']; ?>"><?php echo $social_link['title']; ?></a></li>
+
+    <?php endwhile; ?>
+
+    </ul>
+    </div>
+
+<?php endif; ?>
+
+
+          <div>
+            <p class="newsletter-button">Newsletter</p>
+          </div>
         </div>
       </footer>
     </div>

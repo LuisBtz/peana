@@ -8,4 +8,5 @@ function pl_setup_theme(){
 
   register_nav_menu( 'primary', __( 'Primary Menu ', 'peana' ) );
   register_nav_menu( 'secondary', __( 'Exhibitions Menu ', 'peana' ) );
+  register_nav_menu( 'terciary', __( 'Years Menu ', 'peana' ) );
 }

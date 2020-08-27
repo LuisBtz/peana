@@ -27,11 +27,7 @@ $viewing_room_text = get_field('viewing_room_text');
                 <div class="info-text container">
                   <?php echo $description_text; ?>
                 </div>
-
-
-              <?php elseif( get_row_layout() == 'slider_section' ): ?>
-                  
-
+            <?php elseif( get_row_layout() == 'slider_section' ): ?>
                 <?php
                     if( have_rows('slider') ):
                     // loop through the rows of data
@@ -42,89 +38,62 @@ $viewing_room_text = get_field('viewing_room_text');
                         while ( have_rows('slider') ) : the_row();
                         //vars
                       ?>
-
                         <?php the_sub_field('image'); ?>                     
+                      <?php endwhile; ?>
+                        </div>
+                      </div>
+                  <?php else : // no rows found
+                  endif; ?>
+            <?php elseif( get_row_layout() == 'i_and_t' ): 
+              $image_of_text = get_sub_field('image_of_text');
+              $text_from_image = get_sub_field('text_from_image');
+              ?>
+              <div class="container image-text">
+                <div class="info-text">
+                  <div class="image">
+                    <?php echo $image_of_text; ?>
+                  </div>
+                  <div class="text">
+                    <h6><?php echo $text_from_image; ?></h6>
+                  </div>
+                </div>
+              </div>
+            <?php elseif( get_row_layout() == 'full_cont' ): 
+              $code_or_image = get_sub_field('code_or_image');
+            ?>
+              <div class="container video"><?php echo $code_or_image; ?></div>
+            <?php elseif( get_row_layout() == 'rep_work' ): ?>
+              <?php
+                    if( have_rows('repeater') ):
+                    // loop through the rows of data
+                  ?>
+                    <div class="container cuadros">
+                      <div class="info-text">
+                      <?php 
+                        while ( have_rows('repeater') ) : the_row();
+                        //vars
+                        $work_image = get_sub_field('work_image');
+                        $info = get_sub_field('info');
+                      ?>
+                        <div class="cuadro">
+                          <div class="img">
+                            <?php echo $work_image; ?>
+                          </div>
+                          <div class="info-cuadro">
+                            <?php echo $info; ?>
+                          </div>
+                        </div>  
 
                       <?php endwhile; ?>
+
                         </div>
                       </div>
 
                   <?php else : // no rows found
                   endif; ?>
 
-                
               <?php endif; ?>
           <?php endwhile; ?>
       <?php endif; ?>
-
-
-
-
-
-
-
-
-
-
-      <div class="container image-text">
-        <div class="info-text">
-          <div class="image"><img src="assets/images/split.jpg" alt=""></div>
-          <div class="text">
-            <h6>Nulla vitae elit libero, a dis pharetra augue. Vestibulum id ligula porta felis euismod  non mi porta semper. </h6>
-          </div>
-        </div>
-      </div>
-      <div class="container video"><div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/67449472?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script></div>
-      <div class="container cuadros">
-        <div class="info-text">
-          <div class="cuadro">
-            <div class="img"><img src="assets/images/cuadro1.jpg" alt=""></div>
-            <div class="info-cuadro">
-              <p>ASMA</p>
-              <p><b>Soft wax night, 2019</b></p>
-              <p>White paraffin wax, encaustic paint</p>
-              <p>53 x 40 x 5 cm</p>
-              <p>20.9 x 15.7 x 1.9 in</p>
-            </div>
-          </div>
-          <div class="cuadro">
-            <div class="img"><img src="assets/images/cuadro1.jpg" alt=""></div>
-            <div class="info-cuadro">
-              <p>ASMA</p>
-              <p><b>Soft wax night, 2019</b></p>
-              <p>White paraffin wax, encaustic paint</p>
-              <p>53 x 40 x 5 cm</p>
-              <p>20.9 x 15.7 x 1.9 in</p>
-            </div>
-          </div>
-          <div class="cuadro">
-            <div class="img"><img src="assets/images/cuadro1.jpg" alt=""></div>
-            <div class="info-cuadro">
-              <p>ASMA</p>
-              <p><b>Soft wax night, 2019</b></p>
-              <p>White paraffin wax, encaustic paint</p>
-              <p>53 x 40 x 5 cm</p>
-              <p>20.9 x 15.7 x 1.9 in</p>
-            </div>
-          </div>
-          <div class="cuadro">
-            <div class="img"><img src="assets/images/cuadro1.jpg" alt=""></div>
-            <div class="info-cuadro">
-              <p>ASMA</p>
-              <p><b>Soft wax night, 2019</b></p>
-              <p>White paraffin wax, encaustic paint</p>
-              <p>53 x 40 x 5 cm</p>
-              <p>20.9 x 15.7 x 1.9 in</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="info-text container">
-        <p>Employing an adaptable curatorial model, <b>PEANA maintains a permanent gallery</b> in Monterrey, Mexico, <b>while also organizing "off-site" exhibitions</b> in the United States and Europe.</p><br><br>
-        <p>In 2018, <b>PEANA</b> started a <b>residency exchange program between Mexico and New York</b> made possible thanks to the support of Rockefeller Brothers Fund and Residency Unlimited. Starting Fall 2018, this program will run parallel to <b>PEANA</b> as an independent non-profit organization called <b>Persona.</b></p><br><br><br><br><br><br><br><br><br>
-      </div>
-      <div class="slideex owl-carousel owl-theme">
-        <div class="slider-01"><img src="assets/images/slide1.jpg" alt=""><img src="assets/images/slide2.jpg" alt=""><img src="assets/images/slide3.jpg" alt=""><img src="assets/images/slide4.jpg" alt=""></div>
-      </div>
-      <div class="space"></div>
+  <div class="space"></div>
 <?php get_footer(); ?>

@@ -30,11 +30,10 @@ get_header();
 
 
     <?php
-    
         $args = array(
             'post_type' => 'exhibitions',
             'post_status' => 'publish',
-            'category_name'  => 'current',
+            'category_name'  => 'proximamente',
             'posts_per_page' => '-1',
             'order' => 'ASC'
         );
@@ -65,6 +64,10 @@ get_header();
                 <?php
                 endwhile;
             wp_reset_postdata();
+               else: ?>
+
+
+<?php
         endif;
 
     ?>

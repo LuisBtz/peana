@@ -2,13 +2,15 @@
 
 get_header();
 
+//Template Name: Template News
+
 ?>
 <div class="container m-top" id="exhibitions">
     <div class="nav-cat">
 
-        <?php if( has_nav_menu( 'secondary' ) ) {
+        <?php if( has_nav_menu( 'terciary' ) ) {
                 wp_nav_menu(array(
-                'theme_location'                        =>   'secondary',
+                'theme_location'                        =>   'terciary',
                 'container'                             =>   false,
                     )); 
                 }       
@@ -21,7 +23,7 @@ get_header();
         <li><a href="archive.html">Archive</a></li>
         </ul> -->
     </div>
-    <section class="current-grid ajustado">
+    <section class="archive-grid ajustado">
 
 
 
@@ -30,11 +32,10 @@ get_header();
 
 
     <?php
-    
         $args = array(
-            'post_type' => 'exhibitions',
+            'post_type' => 'news',
             'post_status' => 'publish',
-            'category_name'  => 'current',
+            'category_name'  => 'last',
             'posts_per_page' => '-1',
             'order' => 'ASC'
         );
@@ -45,8 +46,7 @@ get_header();
                 // Set variables
                 $artist = get_field('artist');
                 $date = get_field('date');
-                $gallery = get_field('gallery');
-
+                $link = get_field('link');
                 $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'thumbnail' );
 
                 // Output
@@ -54,10 +54,10 @@ get_header();
                 ?>
 
                 <article>
-                    <a href="<?php the_permalink(); ?>"><img src="<?php echo $url; ?>" alt="Peana">
+                    <a href="<?php echo $link['url']; ?>"><img src="<?php echo $url; ?>" alt="Peana">
                         <div class="info-ex">
                             <h3><?php the_title(); ?></h3><b><?php echo $artist; ?></b>
-                            <p><?php echo $date; ?></p><span><?php echo $gallery; ?></span>
+                            <p><?php echo $date; ?></p>
                         </div>
                     </a>
                 </article>
@@ -65,6 +65,10 @@ get_header();
                 <?php
                 endwhile;
             wp_reset_postdata();
+               else: ?>
+
+
+<?php
         endif;
 
     ?>

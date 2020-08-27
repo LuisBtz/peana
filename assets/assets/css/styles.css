@@ -23,6 +23,9 @@ hr {
     -webkit-font-smoothing: antialiased;
     font-weight: initial;
 }
+li {
+    list-style: none;
+}
 
 img {
     width: 100%;
@@ -1300,4 +1303,16 @@ footer .footer-container a {
 .current_page_item a,
 li.current-menu-item a {
     font-family: "Suisse BP Int";
+}
+.lang-item {
+    display: inline;
+}
+
+.lang-item a {
+    text-transform: capitalize;
+}
+
+.current-lang a {
+    font-family: "Suisse BP Int";
+    letter-spacing: 0.49px;
 }

@@ -19,7 +19,7 @@
                       ));
               }       
           ?>
-          <div class="lang"><a href="#">Eng /</a><a href="#">Esp</a></div>
+          <div class="lang"><?php pll_the_languages( array( 'display_names_as' => 'slug' ) );?></div>
           <div class="ham">
             <div class="line"></div>
             <div class="line"></div>
